@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const IframeSchema = new Schema({
-  url: String,
-  name: String,
-  category: String
+const BaseSchema = new Schema({
+  iframe: {
+    url: String,
+    name: String,
+    category: String
+  },
 });
 
-const Iframe = mongoose.model('iframe', IframeSchema);
+const Base = mongoose.model('homepage', BaseSchema);
 
-module.exports = Iframe;
+module.exports = Base;

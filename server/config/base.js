@@ -4,7 +4,7 @@ module.exports = {
     port: process.env.PORT || 3000,
   },
   db: {
-    name: "iframe",
+    name: "homepage",
     url: "mongodb://localhost:27017/"
   }
 };
